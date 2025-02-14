@@ -1,0 +1,13 @@
+default_time_value_units = "seconds"
+
+[formatting]
+format = "{} {}"
+delimiter_text = ", "
+
+[units]
+d = "day(s)"
+h = "hour(s)"
+m = "minute(s)"
+s = "second(s)"
+ms = "millisecond(s)"
+us = "microsecond(s)"
