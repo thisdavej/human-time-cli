@@ -2,6 +2,13 @@
 name = "human-time-cli"
 version = "0.1.0"
 edition = "2021"
+description = "A command-line tool for converting time durations to human-readable formats, built using the `human-time` crate."
+authors = ["Dave Johnson <thisdavej@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/thisdavej/human-time-cli"
+readme = "README.md"
+keywords = ["human", "time", "elapsed", "duration"]
+
 
 [dependencies]
 argh = "0.1.13"
