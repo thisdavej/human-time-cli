@@ -144,36 +144,36 @@ fn test_read_config_invalid() {
 fn test_format_duration_seconds() {
     let config = Config::default();
     let result = format_duration(3600, "sec", &config).unwrap();
-    assert_eq!(result, "1 hour");
+    assert_eq!(result, "1h");
 }
 
 #[test]
 fn test_format_duration_seconds2() {
     let config = Config::default();
     let result = format_duration(7200, "sec", &config).unwrap();
-    assert_eq!(result, "2 hours");
+    assert_eq!(result, "2h");
 }
 
 #[test]
 fn test_format_duration_seconds3() {
     let mut config = Config::default();
-    config.units.h = "hour".to_string();
+    config.units.h = "hour(s)".to_string();
     let result = format_duration(7200, "sec", &config).unwrap();
-    assert_eq!(result, "2 hour");
+    assert_eq!(result, "2hours");
 }
 
 #[test]
 fn test_format_duration_milliseconds() {
     let config = Config::default();
     let result = format_duration(3600, "milli", &config).unwrap();
-    assert_eq!(result, "3 seconds, 600 milliseconds");
+    assert_eq!(result, "3s,600ms");
 }
 
 #[test]
 fn test_format_duration_microseconds() {
     let config = Config::default();
     let result = format_duration(3600, "micro", &config).unwrap();
-    assert_eq!(result, "3 milliseconds, 600 microseconds");
+    assert_eq!(result, "3ms,600µs");
 }
 
 #[test]
