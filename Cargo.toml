@@ -1,7 +1,7 @@
 [package]
 name = "human-time-cli"
-version = "0.1.0"
-edition = "2021"
+version = "0.1.1"
+edition = "2024"
 description = "A command-line tool for converting time durations to human-readable formats, built using the `human-time` crate."
 authors = ["Dave Johnson <thisdavej@gmail.com>"]
 license = "MIT"
@@ -15,7 +15,7 @@ argh = "0.1.13"
 dirs = "6.0.0"
 human-time = "0.1.6"
 regex-lite = "0.1.6"
-serde = { version = "1.0.217", features = ["derive"] }
+serde = { version = "1.0.219", features = ["derive"] }
 toml = "0.8.20"
 
 [[bin]]
